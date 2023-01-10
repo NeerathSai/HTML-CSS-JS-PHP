@@ -1,0 +1,41 @@
+.head {
+  border-bottom: 2px solid darkgreen;
+  display: flex;
+}
+.head .intro {
+  text-align: center;
+}
+.head .intro span {
+  margin: 1em 2em;
+  display: block;
+  color: darkmagenta;
+  font-size: 2em;
+  font-weight: bold;
+}
+
+.main {
+  width: 80%;
+  margin: 0 5em;
+}
+.main .hero .content {
+  display: grid;
+  line-height: 2em;
+}
+.main .hero .content a {
+  text-decoration: none;
+  color: darkmagenta;
+}
+.main .title p#topic {
+  font-size: 1.5em;
+  text-align: left;
+}
+.main .title p.para {
+  font-size: 1.2em;
+}
+.main .end {
+  padding-bottom: 4em;
+}
+.main .end p {
+  text-align: center;
+  font-size: 3em;
+}/*# sourceMappingURL=w3c.css.map */
