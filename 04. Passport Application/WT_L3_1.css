@@ -1,0 +1,43 @@
+body
+{
+    background-color: rgb(101, 216, 255);
+}
+
+.main
+{
+    background-color: rgb(128, 223, 255);
+    position: relative;
+    padding: 1.5%;
+}
+
+.registration
+{
+    position: relative;
+    background-color: white;
+    text-align: center;
+    border-radius: 2%;
+}
+
+.reg-type
+{
+    position: absolute;
+    left: 70%;
+    text-align: left;
+}
+
+.office-loc, .gname, .sname, .dob, .email, .login-gmail, .login-id, .pwd , .confirm-pwd, .hint-ques, .hint-ans, .captcha
+{
+    position: absolute;
+    left: 70%;
+}
+
+image
+{
+    position: absolute;
+    left: 70%;
+}
+
+end-buttons
+{
+    align-items: right;
+}

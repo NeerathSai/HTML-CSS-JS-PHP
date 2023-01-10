@@ -1,0 +1,43 @@
+#image{
+	margin-top: 10px;
+	box-shadow: 5px 5px 5px 5px gray;
+	width: 60px;;
+	padding: 20px;
+	font-weight: 400;
+	padding-bottom: 0px;
+	height: 40px;
+	user-select: none;
+	text-decoration:line-through;
+	font-style: italic;
+	font-size: x-large;
+	border: rgb(241, 182, 104) 2px solid;
+	margin-left: 10px;
+	
+}
+#user-input{
+	box-shadow: 5px 5px 5px 5px rgb(212, 140, 56);
+	width:auto;
+	margin-right: 10px;
+	padding: 10px;
+	padding-bottom: 0px;
+	height: 40px;
+	border: rgb(255, 166, 0) 0px solid;
+}
+input{
+	border:1px black solid;
+}
+.inline{
+	display:inline-block;
+}
+#btn{
+	box-shadow: 5px 5px 5px rgb(255, 124, 124);
+	color: salmon;
+	margin: 10px;
+	background-color: lightblue;
+}
+
+.captcha-dy
+{
+	position: absolute;
+	left: 50%;
+}
