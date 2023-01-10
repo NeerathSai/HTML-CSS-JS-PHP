@@ -1,0 +1,62 @@
+button
+{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.85em;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0;
+    background-color: aliceblue;
+    color: rgb(255, 124, 124) ;
+    border-color: aliceblue;
+    box-shadow: 5px 5px 5px mediumvioletred;
+}
+
+h1
+{
+    font-size: 2em;
+    top: 3%;
+    width: 70%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 15%;
+    text-align: center;
+    background-color: crimson;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    background-color: navy;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+.clock{
+    top: 60%;
+    left: 44%;
+    position: absolute;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 1rem;
+    align-items: center;
+}
+.clockface{
+    position: absolute;
+    top: 60%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+    text-align: center;
+    padding-top: 1rem;
+    align-items: center;
+}
