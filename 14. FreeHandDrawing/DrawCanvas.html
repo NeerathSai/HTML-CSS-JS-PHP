@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Draw Canvas</title>
+
+    <link rel="stylesheet" href="./DrawCanvas.css">
+
+
+</head>
+<body>
+    <h1>Draw With Free Hands:</h1>
+    <br><br>
+    <div class="canvas">
+    <canvas id="canvas" width="500" height="600"></canvas>
+    <script>
+        var canvas = document.getElementById("canvas");
+        var ctx = canvas.getContext("2d");
+        var mousePressed = false;
+        var lastX, lastY;
+        var ctx = canvas.getContext("2d");
+
+        canvas.addEventListener("mousedown", function (e) {
+            mousePressed = true;
+            Draw(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, false);
+        });
+
+        canvas.addEventListener("mousemove", function (e) {
+            if (mousePressed) {
+                Draw(e.pageX - this.offsetLeft, e.pageY - this.offsetTop, true);
+            }
+        });
+
+        canvas.addEventListener("mouseup", function (e) {
+            mousePressed = false;
+        });
+
+        canvas.addEventListener("mouseleave", function (e) {
+            mousePressed = false;
+        });
+
+        function Draw(x, y, isDown) {
+            if (isDown) {
+                ctx.beginPath();
+                ctx.strokeStyle = "black";
+                ctx.lineWidth = 2;
+                ctx.lineJoin = "round";
+                ctx.moveTo(lastX, lastY);
+                ctx.lineTo(x, y);
+                ctx.closePath();
+                ctx.stroke();
+            }
+            lastX = x; lastY = y;
+        }
+
+    </script>
+    <button onclick="clearCanvas()">Reset</button>
+    <script>
+        function clearCanvas() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+        }
+    </script>
+    </div>
+
+</body>
+</html>
