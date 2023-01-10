@@ -1,0 +1,36 @@
+body
+{
+    background-color: deepskyblue;
+}
+
+h1
+{
+    font-size: 2em;
+    width: 70%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 15%;
+    text-align: center;
+    background-color: deeppink;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.85em;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 0;
+    background-color: aliceblue;
+    color: deeppink;
+    border-color: aliceblue;
+    box-shadow: 5px 5px 5px rgb(255, 124, 124);
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BrowserWindow</title>
+
+    <link rel="stylesheet" href="./BrowserWindow.css">
+
+    <script>
+
+        function newWindow()
+        {
+            window.open("HelpWindow.html","_blank","scrollbars=yes,resizable=yes,top=260,left=560,width=400,height=400");
+
+            //var myWindow = window.open("", "", "width=1920,height=1080");
+        }
+
+    </script>
+
+</head>
+<body>
+
+    <h1>Opening a New Browser Window</h1>
+    <button onclick="newWindow()">Click Me</button>
+    
+
+</body>
+</html>
