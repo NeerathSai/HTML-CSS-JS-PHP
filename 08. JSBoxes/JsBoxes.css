@@ -1,0 +1,41 @@
+body
+{
+    background-color: lightpink;
+}
+
+h1
+{
+    font-size: 2em;
+    width: 70%;
+    color: rgb(0, 0, 0);
+    position: absolute;
+    left: 15%;
+    text-align: center;
+    background-color: burlywood;
+    border-radius: 8px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h3
+{
+    font-size: 1.2em;
+    color: rgb(0, 0, 0);
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p
+{
+    background-color: lightblue;
+    border-radius: 6px;
+    padding: 10px;
+}
+
+#print, #id1, #id2
+{
+    background-color: lightpink;
+}

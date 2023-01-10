@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JsBoxes</title>
+    <link rel="stylesheet" href="./JsBoxes.css">
+
+</head>
+<body>
+    <h1>Types of Popup Boxes in JavaScript</h1>
+    <br><br><br><br>
+    <h2>
+        To communicate effectively, in a profound manner we use pop-up boxes of Js
+    </h2>
+
+
+    <h3>Alert Box</h3>
+    <p>
+        An alert box is often used if you want to make sure information comes through to the user.When an alert box pops up, the user will have to click "OK" to proceed.
+    </p>
+    <button onclick="AlertBox()">Click Me</button><br><br>
+
+    <h3>Confirm Box</h3>
+    <p>
+        A confirm box is often used if you want the user to verify or accept something.When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.If the user clicks "OK", the box returns true. If the user clicks "Cancel", the box returns false.
+    </p>
+    <button onclick="ConfirmBox()">Click Me</button><br>
+
+    <p id="print"></p>
+
+    <h3>Prompt Box</h3>
+    <p>
+        A prompt box is often used if you want the user to input a value before entering a page.When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
+    </p>
+    <button onclick="PromptBox()">Click Me</button><br><br>
+
+    <p id="id1"></p>
+    <p id="id2"></p>
+
+    <br><br><br><br><br>
+    <script>
+
+        function AlertBox()
+        {
+            alert("Your Information Updated !");
+        }
+
+        function PromptBox()
+        {
+            var x = prompt("Enter your Reg.No.: ");
+            var y = prompt("Enter your Learner ID: ");
+
+            let a = "Your Reg.No.: " + x + "\n";
+            let b = "\nYour Learner ID: " + y + "\n";
+
+            document.getElementById("id1").innerHTML = a.fontcolor("blue");
+            document.getElementById("id2").innerHTML = b.fontcolor("blue");
+        }
+
+        function ConfirmBox()
+        {
+            var x;
+            if (confirm("Press a button!") == true)
+            {
+                document.getElementById("print").innerHTML = "You pressed OK!".fontcolor("red");
+            }
+
+            else
+            {
+                document.getElementById("print").innerHTML = "You pressed Cancel!".fontcolor("red");
+            }
+        }
+
+    </script>
+
+
+</body>
+</html>
