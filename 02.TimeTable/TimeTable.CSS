@@ -1,0 +1,57 @@
+span
+{
+    color: red;
+}
+
+h2
+{
+    text-align: center;
+}
+
+pre
+{
+    text-align: center;
+    font-size: 1em;
+}
+
+table, th, td
+{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+caption
+{
+    text-align: left;
+}
+
+.break
+{
+    background-color: lightgrey;
+}
+
+.day
+{
+    background-color: rgb(255, 190, 25);
+}
+
+.time
+{
+    background-color: rgb(187, 208, 236);
+}
+
+table.center
+{
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+table
+{
+    text-align: center;
+}
+
+th
+{
+    padding: 7px;
+}
