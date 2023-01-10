@@ -1,0 +1,74 @@
+*
+{
+    box-sizing: border-box;
+}
+
+body
+{
+    background: black;
+    overflow: hidden;
+}
+
+h1
+{
+    position: absolute;
+    color: white;
+    padding-left: 35%;
+    font-size: 4vw;
+}
+
+.moon
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 250px;
+    height: 250px;
+    background: rgb(247, 249, 238);
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(219, 230, 224, 1);
+    transform: translate(-60%, -50%);
+    animation: moon-colour 10s infinite linear;
+}
+
+.earth
+{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: black;
+    box-shadow: inset 0 0 35px rgb(37, 37, 37);
+    transform-origin: 50% 150%;
+    transform: rotate(-90deg);
+    animation: lunar-eclipse 10s infinite linear;
+}
+
+@keyframes lunar-eclipse
+{
+    0%
+    {
+        transform: rotate(-90deg);
+    }
+
+    50%
+    {
+        transform: rotate(0deg);
+    }
+
+    100%
+    {
+        transform: rotate(90deg);
+    }
+}
+
+@keyframes moon-colour
+{
+    50%
+    {
+        box-shadow: 0 0 10px #f9f3f2, 0 0 50px 8px #ffefbe;
+		background: #efdbd8;
+    }
+}
